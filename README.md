@@ -6,4 +6,7 @@ You can use any widget/image/Icon as a placeholder and use this loading widget a
 
 The fade in/out transition time is customizable.
 
+![](simple_loading.gif)
+
+
 #flutter #dart #hybridapp
