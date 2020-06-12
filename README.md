@@ -1,4 +1,5 @@
-# Simple Loading Widget
+
+# Flutter: Simple Loading Widget
 
 Simple Fade in and Fade out loading widget to show to user while an app is working.
 
@@ -9,4 +10,3 @@ The fade in/out transition time is customizable.
 ![](simple_loading.gif)
 
 
-#flutter #dart #hybridapp
