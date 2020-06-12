@@ -15,15 +15,40 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Center(
-        child: CircleAvatar(
-          radius: 40,
-          child: LoadingAlert(
-              placeHolderWidget: Icon(
-            Icons.person,
-            size: 60,
-            color: Colors.white,
-          )),
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              CircleAvatar(
+                radius: 40,
+                child: LoadingAlert(
+                  placeHolderWidget: Icon(
+                    Icons.person,
+                    size: 60,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                height: 100,
+                width: 200,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
+                  border: Border.all(color: Colors.grey,),
+                  color: Colors.grey[200],
+                ),
+                child: LoadingAlert(
+                  placeHolderWidget: Icon(
+                    Icons.image,
+                    size: 60,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
